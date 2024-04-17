@@ -364,8 +364,8 @@ def RestrictedClassType(*args, **kwargs):
                     if test(val) is not False:
                         passed = True
                         break
-                if not passed:
-                    raise ValueError("%s does not match a restricted type" % val)
+                #if not passed:
+                #    raise ValueError("%s does not match a restricted type" % val)
 
             try:
                 obj = base_type.__new__(self, *args, **kwargs)
